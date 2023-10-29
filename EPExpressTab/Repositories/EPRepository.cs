@@ -17,6 +17,7 @@ namespace EPExpressTab.Repositories
         /// <param name="contactId">Contact's GUID</param>
         /// <param name="facets">Facets that should be loaded with contact</param>
         /// <returns>Sitecore.XConnect.Contact</returns>
+        [Obsolete]
         public static Contact GetContact(Guid contactId, params string[] facets)
         {
             Assert.IsNotNull(contactId, "contactId is null");
